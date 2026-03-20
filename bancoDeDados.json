@@ -1,0 +1,400 @@
+    "PNE-001-ALL": {"peca": "pneu slick composto macio", "quantidade": 40, "preco": 3500.0, "dt_preco": "2026-03-13", "tamanho": "grande", "pais": "IT, GLOBAL", "dt_entrada": "2026-03-10 08:00", "usr_entrada": "LOG-01", "acesso": "livre", "dt_saida": "2026-03-12 14:00", "usr_saida": "MEC-01", "equipe": "box_carro_44"},
+    "PNE-002-ALL": {"peca": "pneu chuva intensa", "quantidade": 24, "preco": 3800.0, "dt_preco": "2026-03-13", "tamanho": "grande", "pais": "IT, GLOBAL", "dt_entrada": "2026-03-10 08:30", "usr_entrada": "LOG-01", "acesso": "livre", "dt_saida": "Sem saida", "usr_saida": "N/A", "equipe": "N/A"},
+    "MOT-V8T-GT3": {"peca": "motor v8 bi-turbo", "quantidade": 3, "preco": 125000.0, "dt_preco": "2026-03-13", "tamanho": "grande", "pais": "DE", "dt_entrada": "2026-02-15 10:00", "usr_entrada": "ENG-01", "acesso": "restrito_engenharia", "dt_saida": "2026-03-01 09:00", "usr_saida": "ENG-02", "equipe": "montagem_motor"},
+    "MOT-V6H-F10": {"peca": "motor v6 hibrido", "quantidade": 2, "preco": 850000.0, "dt_preco": "2026-03-13", "tamanho": "grande", "pais": "UK", "dt_entrada": "2026-03-01 11:00", "usr_entrada": "ENG-01", "acesso": "restrito_diretoria", "dt_saida": "Sem saida", "usr_saida": "N/A", "equipe": "N/A"},
+    "FRE-CAR-ALL": {"peca": "disco de freio carbono", "quantidade": 30, "preco": 4200.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "IT", "dt_entrada": "2026-03-05 14:20", "usr_entrada": "LOG-02", "acesso": "restrito_mecanico", "dt_saida": "2026-03-11 16:45", "usr_saida": "MEC-03", "equipe": "box_carro_11"},
+    "FRE-PAS-ALL": {"peca": "pastilha freio alta temp", "quantidade": 80, "preco": 850.0, "dt_preco": "2026-03-13", "tamanho": "pequeno", "pais": "IT, BR", "dt_entrada": "2026-03-05 15:00", "usr_entrada": "LOG-02", "acesso": "livre", "dt_saida": "2026-03-12 10:10", "usr_saida": "MEC-02", "equipe": "box_carro_44"},
+    "SUS-DAM-LMP": {"peca": "amortecedor multivalvulas", "quantidade": 12, "preco": 6500.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "SE, UK", "dt_entrada": "2026-02-28 09:00", "usr_entrada": "LOG-01", "acesso": "restrito_engenharia", "dt_saida": "2026-03-10 11:30", "usr_saida": "ENG-03", "equipe": "acerto_suspensao"},
+    "SUS-MOL-GT3": {"peca": "mola suspensao 120kg/mm", "quantidade": 16, "preco": 450.0, "dt_preco": "2026-03-13", "tamanho": "pequeno", "pais": "GLOBAL", "dt_entrada": "2026-03-01 13:40", "usr_entrada": "LOG-02", "acesso": "livre", "dt_saida": "2026-03-12 15:20", "usr_saida": "MEC-04", "equipe": "box_carro_11"},
+    "AER-AER-GT3": {"peca": "aerofolio traseiro carbono", "quantidade": 5, "preco": 18500.0, "dt_preco": "2026-03-13", "tamanho": "grande", "pais": "UK", "dt_entrada": "2026-03-11 10:15", "usr_entrada": "LOG-01", "acesso": "restrito_mecanico", "dt_saida": "2026-03-13 08:15", "usr_saida": "MEC-01", "equipe": "reparo_colisao"},
+    "AER-DIF-F10": {"peca": "difusor traseiro soprado", "quantidade": 3, "preco": 35000.0, "dt_preco": "2026-03-13", "tamanho": "grande", "pais": "UK", "dt_entrada": "2026-03-12 16:00", "usr_entrada": "ENG-01", "acesso": "restrito_engenharia", "dt_saida": "Sem saida", "usr_saida": "N/A", "equipe": "N/A"},
+    "CHB-MON-F10": {"peca": "monocoque fibra carbono", "quantidade": 1, "preco": 450000.0, "dt_preco": "2026-03-13", "tamanho": "grande", "pais": "UK, IT", "dt_entrada": "2026-01-20 14:00", "usr_entrada": "ENG-01", "acesso": "restrito_diretoria", "dt_saida": "Sem saida", "usr_saida": "N/A", "equipe": "N/A"},
+    "ELT-ECU-ALL": {"peca": "unidade controle motor ecu", "quantidade": 8, "preco": 12000.0, "dt_preco": "2026-03-13", "tamanho": "pequeno", "pais": "UK, DE", "dt_entrada": "2026-03-02 09:30", "usr_entrada": "LOG-03", "acesso": "restrito_engenharia", "dt_saida": "2026-03-09 14:40", "usr_saida": "ELE-01", "equipe": "telemetria"},
+    "ELT-TEL-ALL": {"peca": "modulo telemetria tx/rx", "quantidade": 10, "preco": 8500.0, "dt_preco": "2026-03-13", "tamanho": "pequeno", "pais": "UK", "dt_entrada": "2026-03-02 10:00", "usr_entrada": "LOG-03", "acesso": "restrito_engenharia", "dt_saida": "2026-03-11 09:10", "usr_saida": "ELE-02", "equipe": "telemetria"},
+    "CAM-SEQ-GT3": {"peca": "cambio sequencial 6m", "quantidade": 4, "preco": 42000.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "UK", "dt_entrada": "2026-02-25 11:20", "usr_entrada": "LOG-01", "acesso": "restrito_mecanico", "dt_saida": "2026-03-08 16:30", "usr_saida": "MEC-02", "equipe": "box_carro_44"},
+    "CAM-EMB-ALL": {"peca": "embreagem carbono 4 discos", "quantidade": 15, "preco": 5600.0, "dt_preco": "2026-03-13", "tamanho": "pequeno", "pais": "DE, IT", "dt_entrada": "2026-03-05 08:45", "usr_entrada": "LOG-02", "acesso": "restrito_mecanico", "dt_saida": "2026-03-12 11:00", "usr_saida": "MEC-03", "equipe": "box_carro_11"},
+    "ELT-VOL-F10": {"peca": "volante multifuncao f1", "quantidade": 4, "preco": 65000.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "UK", "dt_entrada": "2026-03-01 13:00", "usr_entrada": "ENG-02", "acesso": "restrito_engenharia", "dt_saida": "2026-03-10 09:50", "usr_saida": "ELE-01", "equipe": "telemetria"},
+    "CHB-SAN-GT3": {"peca": "gaiola santo antonio fia", "quantidade": 2, "preco": 11000.0, "dt_preco": "2026-03-13", "tamanho": "grande", "pais": "BR, DE", "dt_entrada": "2026-02-10 15:45", "usr_entrada": "LOG-01", "acesso": "restrito_mecanico", "dt_saida": "Sem saida", "usr_saida": "N/A", "equipe": "N/A"},
+    "MOT-EXA-GT3": {"peca": "coletor exaustao inconel", "quantidade": 6, "preco": 14500.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "IT", "dt_entrada": "2026-03-06 10:15", "usr_entrada": "LOG-02", "acesso": "restrito_mecanico", "dt_saida": "2026-03-12 14:15", "usr_saida": "MEC-01", "equipe": "box_carro_44"},
+    "SUS-BAR-ALL": {"peca": "barra estabilizadora dnt", "quantidade": 20, "preco": 1200.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "GLOBAL", "dt_entrada": "2026-03-08 09:00", "usr_entrada": "LOG-02", "acesso": "livre", "dt_saida": "2026-03-11 13:20", "usr_saida": "MEC-04", "equipe": "acerto_suspensao"},
+    "AER-SPL-GT3": {"peca": "splitter dianteiro", "quantidade": 10, "preco": 3200.0, "dt_preco": "2026-03-13", "tamanho": "grande", "pais": "BR, GLOBAL", "dt_entrada": "2026-03-01 11:30", "usr_entrada": "LOG-03", "acesso": "restrito_mecanico", "dt_saida": "2026-03-09 10:00", "usr_saida": "MEC-03", "equipe": "reparo_colisao"},
+    "FRE-FLX-ALL": {"peca": "fluido freio dot 5.1 racing", "quantidade": 150, "preco": 180.0, "dt_preco": "2026-03-13", "tamanho": "pequeno", "pais": "GLOBAL", "dt_entrada": "2026-02-28 15:45", "usr_entrada": "LOG-02", "acesso": "livre", "dt_saida": "2026-03-12 17:00", "usr_saida": "MEC-02", "equipe": "manutencao_geral"},
+    "ELT-SEN-ALL": {"peca": "sensor tubo pitot aero", "quantidade": 15, "preco": 3400.0, "dt_preco": "2026-03-13", "tamanho": "pequeno", "pais": "UK", "dt_entrada": "2026-03-05 14:00", "usr_entrada": "LOG-03", "acesso": "restrito_engenharia", "dt_saida": "2026-03-11 09:10", "usr_saida": "ENG-03", "equipe": "p_d_aerodinamica"},
+    "CHB-BAN-ALL": {"peca": "banco concha fia ultra leve", "quantidade": 4, "preco": 8900.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "IT", "dt_entrada": "2026-03-08 11:20", "usr_entrada": "LOG-01", "acesso": "restrito_mecanico", "dt_saida": "Sem saida", "usr_saida": "N/A", "equipe": "N/A"},
+    "MOT-RAD-ALL": {"peca": "radiador aluminio alta cap", "quantidade": 8, "preco": 4100.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "GLOBAL", "dt_entrada": "2026-03-02 11:55", "usr_entrada": "LOG-02", "acesso": "restrito_mecanico", "dt_saida": "2026-03-09 10:10", "usr_saida": "MEC-01", "equipe": "box_carro_44"},
+    "PNE-MAN-ALL": {"peca": "manta aquecedora pneu", "quantidade": 16, "preco": 2200.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "UK, BR", "dt_entrada": "2026-02-10 08:00", "usr_entrada": "LOG-01", "acesso": "livre", "dt_saida": "2026-03-12 15:40", "usr_saida": "MEC-04", "equipe": "box_carro_11"},
+    "ELT-CHI-ALL": {"peca": "chicote eletrico principal", "quantidade": 5, "preco": 15000.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "UK, DE", "dt_entrada": "2026-03-01 13:15", "usr_entrada": "LOG-03", "acesso": "restrito_engenharia", "dt_saida": "2026-03-08 10:00", "usr_saida": "ELE-01", "equipe": "montagem_motor"},
+    "FRE-PIN-ALL": {"peca": "pinca freio 6 pistoes titanio", "quantidade": 12, "preco": 13500.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "IT", "dt_entrada": "2026-03-03 16:50", "usr_entrada": "LOG-02", "acesso": "restrito_mecanico", "dt_saida": "2026-03-10 11:30", "usr_saida": "MEC-03", "equipe": "box_carro_11"},
+    "SUS-BRA-F10": {"peca": "braco suspensao carbono dnt", "quantidade": 6, "preco": 22000.0, "dt_preco": "2026-03-13", "tamanho": "medio", "pais": "UK", "dt_entrada": "2026-03-07 09:20", "usr_entrada": "LOG-01", "acesso": "restrito_engenharia", "dt_saida": "2026-03-12 14:50", "usr_saida": "ENG-02", "equipe": "p_d_aerodinamica"},
+    "AER-SID-F10": {"peca": "sidepod fluxo otimizado", "quantidade": 2, "preco": 48000.0, "dt_preco": "2026-03-13", "tamanho": "grande", "pais": "UK", "dt_entrada": "2026-03-04 15:20", "usr_entrada": "ENG-01", "acesso": "restrito_engenharia", "dt_saida": "2026-03-12 09:30", "usr_saida": "ENG-03", "equipe": "p_d_aerodinamica"},
+    "MIS-PAR-ALL": {"peca": "parafuso titanio kit 100", "quantidade": 50, "preco": 850.0, "dt_preco": "2026-03-13", "tamanho": "pequeno", "pais": "GLOBAL", "dt_entrada": "2026-01-30 08:10", "usr_entrada": "LOG-03", "acesso": "livre", "dt_saida": "2026-03-11 13:40", "usr_saida": "MEC-02", "equipe": "manutencao_geral"}
+}
+
+
+{
+    "pecas": [
+      {
+        "id": 1,
+        "peca": "Pneu slick composto macio",
+        "tipo": "pneus",
+        "parte": "rodas",
+        "veiculos": [
+          "GT3",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-10"
+      },
+      {
+        "id": 2,
+        "peca": "Pneu chuva intensa",
+        "tipo": "pneus",
+        "parte": "rodas",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-10"
+      },
+      {
+        "id": 3,
+        "peca": "Motor V8 bi-turbo",
+        "tipo": "motor",
+        "parte": "propulsao",
+        "veiculos": [
+          "GT3"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-02-15"
+      },
+      {
+        "id": 4,
+        "peca": "Motor V6 hibrido",
+        "tipo": "motor",
+        "parte": "propulsao",
+        "veiculos": [
+          "F10"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-01"
+      },
+      {
+        "id": 5,
+        "peca": "Disco de freio carbono",
+        "tipo": "freio",
+        "parte": "freio",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-05"
+      },
+      {
+        "id": 6,
+        "peca": "Pastilha freio alta temperatura",
+        "tipo": "freio",
+        "parte": "freio",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-05"
+      },
+      {
+        "id": 7,
+        "peca": "Amortecedor multivalvulas",
+        "tipo": "suspensao",
+        "parte": "suspensao",
+        "veiculos": [
+          "LMP",
+          "GT3"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-02-28"
+      },
+      {
+        "id": 8,
+        "peca": "Mola suspensao 120kg/mm",
+        "tipo": "suspensao",
+        "parte": "suspensao",
+        "veiculos": [
+          "GT3",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-01"
+      },
+      {
+        "id": 9,
+        "peca": "Aerofolio traseiro carbono",
+        "tipo": "aerodinamica",
+        "parte": "traseira",
+        "veiculos": [
+          "GT3"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-11"
+      },
+      {
+        "id": 10,
+        "peca": "Difusor traseiro soprado",
+        "tipo": "aerodinamica",
+        "parte": "traseira",
+        "veiculos": [
+          "F10"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-12"
+      },
+      {
+        "id": 11,
+        "peca": "Monocoque fibra de carbono",
+        "tipo": "chassi",
+        "parte": "estrutura",
+        "veiculos": [
+          "F10"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-01-20"
+      },
+      {
+        "id": 12,
+        "peca": "Unidade controle motor ECU",
+        "tipo": "eletronica",
+        "parte": "controle",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-02"
+      },
+      {
+        "id": 13,
+        "peca": "Modulo telemetria TX/RX",
+        "tipo": "eletronica",
+        "parte": "telemetria",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-02"
+      },
+      {
+        "id": 14,
+        "peca": "Cambio sequencial 6 marchas",
+        "tipo": "transmissao",
+        "parte": "transmissao",
+        "veiculos": [
+          "GT3"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-02-25"
+      },
+      {
+        "id": 15,
+        "peca": "Embreagem carbono 4 discos",
+        "tipo": "transmissao",
+        "parte": "transmissao",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-05"
+      },
+      {
+        "id": 16,
+        "peca": "Volante multifuncao F1",
+        "tipo": "eletronica",
+        "parte": "direcao",
+        "veiculos": [
+          "F10"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-01"
+      },
+      {
+        "id": 17,
+        "peca": "Gaiola santo antonio FIA",
+        "tipo": "chassi",
+        "parte": "estrutura",
+        "veiculos": [
+          "GT3"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-02-10"
+      },
+      {
+        "id": 18,
+        "peca": "Coletor exaustao inconel",
+        "tipo": "motor",
+        "parte": "escape",
+        "veiculos": [
+          "GT3"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-06"
+      },
+      {
+        "id": 19,
+        "peca": "Barra estabilizadora DNT",
+        "tipo": "suspensao",
+        "parte": "suspensao",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-08"
+      },
+      {
+        "id": 20,
+        "peca": "Splitter dianteiro",
+        "tipo": "aerodinamica",
+        "parte": "dianteira",
+        "veiculos": [
+          "GT3"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-01"
+      },
+      {
+        "id": 21,
+        "peca": "Fluido freio DOT 5.1 racing",
+        "tipo": "freio",
+        "parte": "freio",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-02-28"
+      },
+      {
+        "id": 22,
+        "peca": "Sensor tubo pitot aero",
+        "tipo": "eletronica",
+        "parte": "telemetria",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-05"
+      },
+      {
+        "id": 23,
+        "peca": "Banco concha FIA ultra leve",
+        "tipo": "interior",
+        "parte": "banco",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-08"
+      },
+      {
+        "id": 24,
+        "peca": "Radiador aluminio alta capacidade",
+        "tipo": "motor",
+        "parte": "arrefecimento",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-02"
+      },
+      {
+        "id": 25,
+        "peca": "Manta aquecedora pneu",
+        "tipo": "pneus",
+        "parte": "rodas",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-02-10"
+      },
+      {
+        "id": 26,
+        "peca": "Chicote eletrico principal",
+        "tipo": "eletronica",
+        "parte": "controle",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-01"
+      },
+      {
+        "id": 27,
+        "peca": "Pinca freio 6 pistoes titanio",
+        "tipo": "freio",
+        "parte": "freio",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-03"
+      },
+      {
+        "id": 28,
+        "peca": "Braco suspensao carbono DNT",
+        "tipo": "suspensao",
+        "parte": "suspensao",
+        "veiculos": [
+          "F10"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-07"
+      },
+      {
+        "id": 29,
+        "peca": "Sidepod fluxo otimizado",
+        "tipo": "aerodinamica",
+        "parte": "lateral",
+        "veiculos": [
+          "F10"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-03-04"
+      },
+      {
+        "id": 30,
+        "peca": "Parafuso titanio kit 100",
+        "tipo": "fixacao",
+        "parte": "fixacao",
+        "veiculos": [
+          "GT3",
+          "F10",
+          "GLOBAL"
+        ],
+        "fabricante": "IndustriasPY Motorsport",
+        "data_fabricacao": "2026-01-30"
+      }
+    ]
+  }
