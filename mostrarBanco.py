@@ -1,9 +1,24 @@
-def mostrar_estoque():
+from lerBanco import lerBanco
 
-    lerB = lerbanco.lerBanco()
+def mostrar_banco():
+    pecas = lerBanco()["pecas"]
     print("*******Estoque atual:********")
-for codigo, info in lerBanco().items():
-    print(f"Código: {codigo}")
-    print(f"  Peça: {info['peca']}")
-    print("-" * 30)
-    print(f"  Qtd: {info['quantidade']}  Preço: R$ {info['preco']}  data: {info['dt_preco']} tamanho: {info['tamanho']} tamanho: {info['tamanho']} ")
+    for peca in pecas:
+        chave = peca["id"]
+        peca = peca["peca"]
+        print(f"ID: {chave}")
+        print(f"Peca: {peca}")
+
+
+def buscar_peca():
+    pecas = lerBanco()["pecas"]
+    pecaBuscada = "Modulo telemetria TX/RX"
+    for peca in pecas:
+        if pecaBuscada == peca["peca"]:
+            chave = peca["id"]
+            peca = peca["peca"]
+            print(f"ID: {chave}")
+            print(f"Peca: {peca}")
+
+            
+    
