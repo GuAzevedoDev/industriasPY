@@ -12,29 +12,38 @@ def mostrar_banco():
 
 
 def buscar_peca(pecaBuscada):
-    encontrada = False
     encontrados = []
     pecas = lerBanco()['pecas']
     for peca in pecas:
         if pecaBuscada.lower() in peca['peca'].lower():
-            encontrada = True
-            encontrados.append(peca['id'])
-            print(f"ID: {peca['id']}")
-            print(f"Peca: {peca['peca']}\n")
+            encontrados.append(peca)
+           
+    if not encontrados:
+        print("Peca nao encontrada")
+        return None
+    
+    if len(encontrados) == 1:
+        print("Peca encontrada!")
+        print(f"ID: {peca['id']}")
+        print(f"Peca: {peca['peca']}\n")
+        return peca
+
     if len(encontrados) > 1:
         print(f"\n\nForam encontradas {len(encontrados)} pecas que correspondem a sua pesquisa\n")
-        idInput = int(input("Digite o id da peca escolhida: "))
-        if idInput in encontrados:
-            for peca in pecas:
-                if idInput == peca['id']:
-                    print(f"ID: {peca['id']}")
-                    print(f"Peca: {peca['peca']}\n")
-        else: print("O id digitado nao esta na lista")
+        for peca in encontrados:
+            print(f"ID: {peca['id']}")
+            print(f"Peca: {peca['peca']}\n")
 
-    if not encontrada:
-        print("Peca nao encontrada")   
+        idInput = int(input("Digite o ID da peca escolhida: "))
+
+        for peca in encontrados:
+            if idInput == peca['id']:
+                print(f"ID: {peca['id']}")
+                print(f"Peca: {peca['peca']}\n")
+                return peca['peca']
+        else: print("O id digitado nao esta na lista")
         
-buscar_peca("Volante esportivo")
+buscar_peca("radio")
 
 
 
