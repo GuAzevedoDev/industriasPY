@@ -1,368 +1,274 @@
-
 {
-    "pecas": [
-      {
-        "id": 1,
-        "peca": "Pneu slick composto macio",
-        "tipo": "pneus",
-        "parte": "rodas",
-        "veiculos": [
-          "GT3",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-10"
-      },
-      {
-        "id": 2,
-        "peca": "Pneu chuva intensa",
-        "tipo": "pneus",
-        "parte": "rodas",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-10"
-      },
-      {
-        "id": 3,
-        "peca": "Motor V8 bi-turbo",
-        "tipo": "motor",
-        "parte": "propulsao",
-        "veiculos": [
-          "GT3"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-02-15"
-      },
-      {
-        "id": 4,
-        "peca": "Motor V6 hibrido",
-        "tipo": "motor",
-        "parte": "propulsao",
-        "veiculos": [
-          "F10"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-01"
-      },
-      {
-        "id": 5,
-        "peca": "Disco de freio carbono",
-        "tipo": "freio",
-        "parte": "freio",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-05"
-      },
-      {
-        "id": 6,
-        "peca": "Pastilha freio alta temperatura",
-        "tipo": "freio",
-        "parte": "freio",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-05"
-      },
-      {
-        "id": 7,
-        "peca": "Amortecedor multivalvulas",
-        "tipo": "suspensao",
-        "parte": "suspensao",
-        "veiculos": [
-          "LMP",
-          "GT3"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-02-28"
-      },
-      {
-        "id": 8,
-        "peca": "Mola suspensao 120kg/mm",
-        "tipo": "suspensao",
-        "parte": "suspensao",
-        "veiculos": [
-          "GT3",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-01"
-      },
-      {
-        "id": 9,
-        "peca": "Aerofolio traseiro carbono",
-        "tipo": "aerodinamica",
-        "parte": "traseira",
-        "veiculos": [
-          "GT3"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-11"
-      },
-      {
-        "id": 10,
-        "peca": "Difusor traseiro soprado",
-        "tipo": "aerodinamica",
-        "parte": "traseira",
-        "veiculos": [
-          "F10"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-12"
-      },
-      {
-        "id": 11,
-        "peca": "Monocoque fibra de carbono",
-        "tipo": "chassi",
-        "parte": "estrutura",
-        "veiculos": [
-          "F10"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-01-20"
-      },
-      {
-        "id": 12,
-        "peca": "Unidade controle motor ECU",
-        "tipo": "eletronica",
-        "parte": "controle",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-02"
-      },
-      {
-        "id": 13,
-        "peca": "Modulo telemetria TX/RX",
-        "tipo": "eletronica",
-        "parte": "telemetria",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-02"
-      },
-      {
-        "id": 14,
-        "peca": "Cambio sequencial 6 marchas",
-        "tipo": "transmissao",
-        "parte": "transmissao",
-        "veiculos": [
-          "GT3"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-02-25"
-      },
-      {
-        "id": 15,
-        "peca": "Embreagem carbono 4 discos",
-        "tipo": "transmissao",
-        "parte": "transmissao",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-05"
-      },
-      {
-        "id": 16,
-        "peca": "Volante multifuncao F1",
-        "tipo": "eletronica",
-        "parte": "direcao",
-        "veiculos": [
-          "F10"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-01"
-      },
-      {
-        "id": 17,
-        "peca": "Gaiola santo antonio FIA",
-        "tipo": "chassi",
-        "parte": "estrutura",
-        "veiculos": [
-          "GT3"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-02-10"
-      },
-      {
-        "id": 18,
-        "peca": "Coletor exaustao inconel",
-        "tipo": "motor",
-        "parte": "escape",
-        "veiculos": [
-          "GT3"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-06"
-      },
-      {
-        "id": 19,
-        "peca": "Barra estabilizadora DNT",
-        "tipo": "suspensao",
-        "parte": "suspensao",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-08"
-      },
-      {
-        "id": 20,
-        "peca": "Splitter dianteiro",
-        "tipo": "aerodinamica",
-        "parte": "dianteira",
-        "veiculos": [
-          "GT3"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-01"
-      },
-      {
-        "id": 21,
-        "peca": "Fluido freio DOT 5.1 racing",
-        "tipo": "freio",
-        "parte": "freio",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-02-28"
-      },
-      {
-        "id": 22,
-        "peca": "Sensor tubo pitot aero",
-        "tipo": "eletronica",
-        "parte": "telemetria",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-05"
-      },
-      {
-        "id": 23,
-        "peca": "Banco concha FIA ultra leve",
-        "tipo": "interior",
-        "parte": "banco",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-08"
-      },
-      {
-        "id": 24,
-        "peca": "Radiador aluminio alta capacidade",
-        "tipo": "motor",
-        "parte": "arrefecimento",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-02"
-      },
-      {
-        "id": 25,
-        "peca": "Manta aquecedora pneu",
-        "tipo": "pneus",
-        "parte": "rodas",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-02-10"
-      },
-      {
-        "id": 26,
-        "peca": "Chicote eletrico principal",
-        "tipo": "eletronica",
-        "parte": "controle",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-01"
-      },
-      {
-        "id": 27,
-        "peca": "Pinca freio 6 pistoes titanio",
-        "tipo": "freio",
-        "parte": "freio",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-03"
-      },
-      {
-        "id": 28,
-        "peca": "Braco suspensao carbono DNT",
-        "tipo": "suspensao",
-        "parte": "suspensao",
-        "veiculos": [
-          "F10"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-07"
-      },
-      {
-        "id": 29,
-        "peca": "Sidepod fluxo otimizado",
-        "tipo": "aerodinamica",
-        "parte": "lateral",
-        "veiculos": [
-          "F10"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-03-04"
-      },
-      {
-        "id": 30,
-        "peca": "Parafuso titanio kit 100",
-        "tipo": "fixacao",
-        "parte": "fixacao",
-        "veiculos": [
-          "GT3",
-          "F10",
-          "GLOBAL"
-        ],
-        "fabricante": "IndustriasPY Motorsport",
-        "data_fabricacao": "2026-01-30"
-      }
-    ]
-  }
+  "pecas": [
+    {
+      "id": 1,
+      "peca": "Pneu slick composto macio",
+      "tipo": "pneus",
+      "parte": "rodas",
+      "veiculos": ["GT3", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-10"
+    },
+    {
+      "id": 2,
+      "peca": "Pneu chuva intensa",
+      "tipo": "pneus",
+      "parte": "rodas",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-10"
+    },
+    {
+      "id": 3,
+      "peca": "Motor V8 bi-turbo",
+      "tipo": "motor",
+      "parte": "propulsao",
+      "veiculos": ["GT3"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-02-15"
+    },
+    {
+      "id": 4,
+      "peca": "Motor V6 hibrido",
+      "tipo": "motor",
+      "parte": "propulsao",
+      "veiculos": ["F10"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-01"
+    },
+    {
+      "id": 5,
+      "peca": "Disco de freio carbono",
+      "tipo": "freio",
+      "parte": "freio",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-05"
+    },
+    {
+      "id": 6,
+      "peca": "Pastilha freio alta temperatura",
+      "tipo": "freio",
+      "parte": "freio",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-05"
+    },
+    {
+      "id": 7,
+      "peca": "Amortecedor multivalvulas",
+      "tipo": "suspensao",
+      "parte": "suspensao",
+      "veiculos": ["LMP", "GT3"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-02-28"
+    },
+    {
+      "id": 8,
+      "peca": "Mola suspensao 120kg/mm",
+      "tipo": "suspensao",
+      "parte": "suspensao",
+      "veiculos": ["GT3", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-01"
+    },
+    {
+      "id": 9,
+      "peca": "Aerofolio traseiro carbono",
+      "tipo": "aerodinamica",
+      "parte": "traseira",
+      "veiculos": ["GT3"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-11"
+    },
+    {
+      "id": 10,
+      "peca": "Difusor traseiro soprado",
+      "tipo": "aerodinamica",
+      "parte": "traseira",
+      "veiculos": ["F10"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-12"
+    },
+    {
+      "id": 11,
+      "peca": "Monocoque fibra de carbono",
+      "tipo": "chassi",
+      "parte": "estrutura",
+      "veiculos": ["F10"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-01-20"
+    },
+    {
+      "id": 12,
+      "peca": "Unidade controle motor ECU",
+      "tipo": "eletronica",
+      "parte": "controle",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-02"
+    },
+    {
+      "id": 13,
+      "peca": "Modulo telemetria TX/RX",
+      "tipo": "eletronica",
+      "parte": "telemetria",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-02"
+    },
+    {
+      "id": 14,
+      "peca": "Cambio sequencial 6 marchas",
+      "tipo": "transmissao",
+      "parte": "transmissao",
+      "veiculos": ["GT3"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-02-25"
+    },
+    {
+      "id": 15,
+      "peca": "Embreagem carbono 4 discos",
+      "tipo": "transmissao",
+      "parte": "transmissao",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-05"
+    },
+    {
+      "id": 16,
+      "peca": "Volante multifuncao F1",
+      "tipo": "eletronica",
+      "parte": "direcao",
+      "veiculos": ["F10"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-01"
+    },
+    {
+      "id": 17,
+      "peca": "Gaiola santo antonio FIA",
+      "tipo": "chassi",
+      "parte": "estrutura",
+      "veiculos": ["GT3"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-02-10"
+    },
+    {
+      "id": 18,
+      "peca": "Coletor exaustao inconel",
+      "tipo": "motor",
+      "parte": "escape",
+      "veiculos": ["GT3"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-06"
+    },
+    {
+      "id": 19,
+      "peca": "Barra estabilizadora DNT",
+      "tipo": "suspensao",
+      "parte": "suspensao",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-08"
+    },
+    {
+      "id": 20,
+      "peca": "Splitter dianteiro",
+      "tipo": "aerodinamica",
+      "parte": "dianteira",
+      "veiculos": ["GT3"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-01"
+    },
+    {
+      "id": 21,
+      "peca": "Fluido freio DOT 5.1 racing",
+      "tipo": "freio",
+      "parte": "freio",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-02-28"
+    },
+    {
+      "id": 22,
+      "peca": "Sensor tubo pitot aero",
+      "tipo": "eletronica",
+      "parte": "telemetria",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-05"
+    },
+    {
+      "id": 23,
+      "peca": "Banco concha FIA ultra leve",
+      "tipo": "interior",
+      "parte": "banco",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-08"
+    },
+    {
+      "id": 24,
+      "peca": "Radiador aluminio alta capacidade",
+      "tipo": "motor",
+      "parte": "arrefecimento",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-02"
+    },
+    {
+      "id": 25,
+      "peca": "Manta aquecedora pneu",
+      "tipo": "pneus",
+      "parte": "rodas",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-02-10"
+    },
+    {
+      "id": 26,
+      "peca": "Chicote eletrico principal",
+      "tipo": "eletronica",
+      "parte": "controle",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-01"
+    },
+    {
+      "id": 27,
+      "peca": "Pinca freio 6 pistoes titanio",
+      "tipo": "freio",
+      "parte": "freio",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-03"
+    },
+    {
+      "id": 28,
+      "peca": "Braco suspensao carbono DNT",
+      "tipo": "suspensao",
+      "parte": "suspensao",
+      "veiculos": ["F10"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-07"
+    },
+    {
+      "id": 29,
+      "peca": "Sidepod fluxo otimizado",
+      "tipo": "aerodinamica",
+      "parte": "lateral",
+      "veiculos": ["F10"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-03-04"
+    },
+    {
+      "id": 30,
+      "peca": "Parafuso titanio kit 100",
+      "tipo": "fixacao",
+      "parte": "fixacao",
+      "veiculos": ["GT3", "F10", "GLOBAL"],
+      "fabricante": "IndustriasPY Motorsport",
+      "data_fabricacao": "2026-01-30"
+    }
+  ]
+}
