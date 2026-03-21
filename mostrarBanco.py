@@ -4,10 +4,8 @@ def mostrar_banco():
     pecas = lerBanco()["pecas"]
     print("*******Estoque atual:********")
     for peca in pecas:
-        chave = peca["id"]
-        peca = peca["peca"]
-        print(f"ID: {chave}")
-        print(f"Peca: {peca}")
+        print(f"ID: {peca["id"]}")
+        print(f"Peca: {peca["peca"]}")
         print(f"Carros compativeis: {peca['veiculos']}")
         print(f"Fabricantes: {peca['fabricante']}")
 
