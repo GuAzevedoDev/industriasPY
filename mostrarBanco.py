@@ -8,6 +8,8 @@ def mostrar_banco():
         peca = peca["peca"]
         print(f"ID: {chave}")
         print(f"Peca: {peca}")
+        print(f"Carros compativeis: {peca['veiculos']}")
+        print(f"Fabricantes: {peca['fabricante']}")
 
 
 
@@ -23,9 +25,12 @@ def buscar_peca(pecaBuscada):
         return None
     
     if len(encontrados) == 1:
+        peca = encontrados[0]
         print("Peca encontrada!")
         print(f"ID: {peca['id']}")
-        print(f"Peca: {peca['peca']}\n")
+        print(f"Peca: {peca['peca']}")
+        print(f"Carros compativeis: {peca['veiculos']}")
+        print(f"Fabricantes: {peca['fabricante']}")
         return peca
 
     if len(encontrados) > 1:
@@ -39,12 +44,37 @@ def buscar_peca(pecaBuscada):
         for peca in encontrados:
             if idInput == peca['id']:
                 print(f"ID: {peca['id']}")
-                print(f"Peca: {peca['peca']}\n")
-                return peca['peca']
+                print(f"Peca: {peca['peca']}")
+                print(f"Carros compativeis: {peca['veiculos']}")
+                print(f"Fabricantes: {peca['fabricante']}")
+                return peca
         else: print("O id digitado nao esta na lista")
         
-buscar_peca("radio")
+        
+def registrarPeca(quantidade):
+    pecas = lerBanco()['pecas']
+    peca = buscar_peca("Banco")
+    if peca in pecas:
+        peca["quantidade"] += quantidade
+    else:
+        peca["quantidade"] = quantidade
 
+    print(quantidade, peca['peca'], "adicionados ao estoque.")
+
+
+
+def retirarPeca(quantidade,peca):
+    pecas = lerBanco()['pecas']
+    peca = buscar_peca(peca)
+    if peca in pecas:
+        peca["quantidade"] += quantidade    
+    else:
+        peca["quantidade"] = quantidade
+
+    print(quantidade, peca['peca'], "retirado do estoque.")
+
+
+retirarPeca(5,input("Digite a peca: "))
 
 
                      
