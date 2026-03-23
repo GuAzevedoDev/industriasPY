@@ -1,11 +1,13 @@
 from lerBanco import lerBanco
 
+
+
 def mostrar_banco():
     pecas = lerBanco()["pecas"]
     print("*******Estoque atual:********")
     for peca in pecas:
-        print(f"ID: {peca["id"]}")
-        print(f"Peca: {peca["peca"]}")
+        print(f"ID: {peca['id']}")
+        print(f"Peca: {peca['peca']}")
         print(f"Carros compativeis: {peca['veiculos']}")
         print(f"Fabricantes: {peca['fabricante']}")
 
@@ -49,9 +51,11 @@ def buscar_peca(pecaBuscada):
         else: print("O id digitado nao esta na lista")
         
         
-def registrarPeca(quantidade):
+def registrarPeca():
     pecas = lerBanco()['pecas']
-    peca = buscar_peca("Banco")
+    pecaBuscada = input("Digite a peca que deseja registrar: \n")
+    peca = buscar_peca(pecaBuscada)
+    quantidade = int(input("Digite a quantidade: "))
     if peca in pecas:
         peca["quantidade"] += quantidade
     else:
@@ -63,16 +67,39 @@ def registrarPeca(quantidade):
 
 def retirarPeca(quantidade,peca):
     pecas = lerBanco()['pecas']
-    peca = buscar_peca(peca)
+    pecaBuscada = input("Digite a peca que deseja retirar: \n")
+    peca = buscar_peca(pecaBuscada)
+    quantidade = int(input("Digite a quantidade: "))
     if peca in pecas:
-        peca["quantidade"] += quantidade    
+        peca["quantidade"] -= quantidade    
     else:
         peca["quantidade"] = quantidade
 
     print(quantidade, peca['peca'], "retirado do estoque.")
+    
+
+def menu():
+    print(f"{'='*10}Industria PY{'='*10}\n\n")
+    while True:
+        menu = {
+            "1": registrarPeca,
+            "2": retirarPeca
+        }
+       
+        print("Escolha a funcao: \n")
+        print("Adicionar peca no estoque [1]\nRetirar peca do estoque [2]\n")
+        
+        opcao = input("Digite o numero da funcao: ")
+        funcao = menu.get(opcao)
+
+        if funcao: 
+            funcao()
+
+        else:
+            print("Digite uma opcao valida")
 
 
-retirarPeca(5,input("Digite a peca: "))
+menu()
 
 
                      
