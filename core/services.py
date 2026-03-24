@@ -1,15 +1,28 @@
-from database import lerBanco
+from core.database import lerBanco
+import os
+
+""" Mostrar Banco """
 
 def mostrar_banco():
     pecas = lerBanco()["pecas"]
     print("*******Estoque atual:********")
     for peca in pecas:
-        print(f"ID: {peca['id']}")
-        print(f"Peca: {peca['peca']}")
-        print(f"Carros compativeis: {peca['veiculos']}")
-        print(f"Fabricantes: {peca['fabricante']}")
+        print(f"ID: {peca['id']} // Nome: {peca['peca']}")
 
 
+
+""" Sair """
+
+def sair():
+    sair = input( '\nPRESSIONE "ENTER" PARA CONTINUAR ' ) 
+    if not sair:
+        os.system('cls')
+    else: 
+        exit()
+        
+    
+
+""" Buscar Peca """
 
 def buscar_peca(pecaBuscada):
     encontrados = []
@@ -47,23 +60,29 @@ def buscar_peca(pecaBuscada):
                 print(f"Fabricantes: {peca['fabricante']}")
                 return peca
         else: print("O id digitado nao esta na lista")
-        
-        
+
+
+
+""" Registrar Peca """
+
 def registrarPeca():
     pecas = lerBanco()['pecas']
     pecaBuscada = input("Digite a peca que deseja registrar: \n")
     peca = buscar_peca(pecaBuscada)
-    quantidade = int(input("Digite a quantidade: "))
     if peca in pecas:
+        quantidade = int(input("Digite a quantidade: "))
         peca["quantidade"] += quantidade
     else:
-        peca["quantidade"] = quantidade
+        opcao = input("Deseja adicionar? (s/n) ")
+        if opcao.lower() == "s":
+            print("peca adicionada")
+    sair()       
 
-    print(quantidade, peca['peca'], "adicionados ao estoque.")
 
 
+""" Retirar Peca """
 
-def retirarPeca(quantidade,peca):
+def retirarPeca():
     pecas = lerBanco()['pecas']
     pecaBuscada = input("Digite a peca que deseja retirar: \n")
     peca = buscar_peca(pecaBuscada)
@@ -74,3 +93,7 @@ def retirarPeca(quantidade,peca):
         peca["quantidade"] = quantidade
 
     print(quantidade, peca['peca'], "retirado do estoque.")
+    sair()
+
+
+
