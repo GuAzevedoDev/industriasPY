@@ -108,3 +108,27 @@ Crie uma função que verifique:
 Se existe duplicidade de (titulo + autor)
 Se houver, mostrar:
 Duplicado encontrado: ('Dom Casmurro', 'Machado de Assis')'''
+
+class Livro:
+    def __init__(self,titulo,autor,data):
+        self.titulo = titulo
+        self.autor = autor
+        self.data = data
+
+
+    
+
+livro1 = Livro("Harry Potter", "Teste" , 2000)
+livro2 = Livro("Harry Potter", "Teste" , 2000)
+livro3 = Livro("Harry Potter", "Teste" , 2000)
+
+
+livros = [livro1,livro2,livro3]
+
+def mostrar_livros(livro):
+    print(f"Livro: {livro.titulo}")
+    print(f"Autor: {livro.autor}")
+    print(f"Data: {livro.data}")
+
+for livro in livros:
+    mostrar_livros(livro)
