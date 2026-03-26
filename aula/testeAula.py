@@ -118,9 +118,9 @@ class Livro:
 
     
 
-livro1 = Livro("Harry Potter", "Teste" , 2000)
-livro2 = Livro("Harry Potter", "Teste" , 2000)
-livro3 = Livro("Harry Potter", "Teste" , 2000)
+livro1 = Livro("Harry Potter 1", "J. K. Rowling" , 1997)
+livro2 = Livro("Harry Potter 2", "J. K. Rowling" , 1998)
+livro3 = Livro("Harry Potter 3", "J. K. Rowling" , 1999)
 
 
 livros = [livro1,livro2,livro3]
@@ -132,3 +132,4 @@ def mostrar_livros(livro):
 
 for livro in livros:
     mostrar_livros(livro)
+    

@@ -1,51 +1,51 @@
-,nome,idade,profissao,salario
-0,João Silva,28,Analista de Dados,5500
-1,Maria Oliveira,34,Desenvolvedora Backend,8200
-2,Carlos Santos,41,Gerente de Projetos,11000
-3,Ana Costa,25,UX Designer,4800
-4,Lucas Pereira,30,Engenheiro de Software,9500
-5,Mariana Lima,22,Estagiário de TI,2200
-6,Ricardo Souza,45,Diretor Comercial,15000
-7,Beatriz Rocha,29,Analista de Marketing,5200
-8,Fernando Alves,37,Administrador de Redes,7300
-9,Camila Mendes,31,Cientista de Dados,10500
-10,Bruno Ferreira,27,Suporte Técnico,3800
-11,Juliana Gomes,33,Product Owner,9800
-12,Gabriel Barbosa,39,Arquiteto de Soluções,13000
-13,Larissa Martins,26,Social Media,4100
-14,Rafael Ribeiro,35,DevOps Engineer,11500
-15,Patrícia Lima,42,Coordenadora de RH,8900
-16,Tiago Nunes,24,Desenvolvedor Frontend,5100
-17,Vanessa Cruz,32,Analista Financeiro,6400
-18,Igor Guimarães,48,Consultor SAP,14200
-19,Letícia Carvalho,23,Assistente Administrativo,2800
-20,Marcos Vinícius,36,Engenheiro Civil,8700
-21,Aline Soares,30,Psicóloga Organizacional,5600
-22,Daniel Duarte,29,DBA,8000
-23,Clara Farias,27,Redatora,4300
-24,Samuel Castro,44,Advogado,9200
-25,Renata Vieira,31,Especialista em SEO,5900
-26,Felipe Ramos,28,QA Tester,5400
-27,Priscila Borges,40,Gerente de Vendas,10200
-28,Eduardo Rocha,34,BI Analyst,7700
-29,Tatiana Luz,25,Designer Gráfico,4600
-30,Hugo Magalhães,50,Diretor de Operações,18000
-31,Simone Pires,38,Enfermeira,6100
-32,Leonardo Ramos,26,Fullstack Developer,6800
-33,Bárbara Silveira,33,Jornalista,5300
-34,Otávio Diniz,47,Economista,11800
-35,Milena Fontes,21,Aprendiz,1800
-36,Caio Teixeira,29,Analista de Segurança,8500
-37,Mônica Cavalcante,43,Contadora,7900
-38,Sérgio Marinho,35,Professor,4500
-39,Débora Peixoto,32,Nutricionista,5700
-40,Marcelo Viana,39,Piloto,12500
-41,Erika Campos,28,Arquiteta,7200
-42,Rogério Brito,46,Corretor de Imóveis,6000
-43,Sabrina Malta,30,Farmacêutica,6300
-44,Vitor Hugo,27,Fotógrafo,3900
-45,Helena Reis,36,Veterinária,7500
-46,Gustavo Paiva,31,Fisioterapeuta,5400
-47,Paola Bracho,34,Relações Públicas,6700
-48,André Cordeiro,42,Engenheiro Mecânico,9100
-49,Fabiana Monteiro,29,Engenheira Química,8300
+;nome;idade;profissao;salario
+0;João Silva;28;Analista de Dados;5500
+1;Maria Oliveira;34;Desenvolvedora Backend;8200
+2;Carlos Santos;41;Gerente de Projetos;11000
+3;Ana Costa;25;UX Designer;4800
+4;Lucas Pereira;30;Engenheiro de Software;9500
+5;Mariana Lima;22;Estagiário de TI;2200
+6;Ricardo Souza;45;Diretor Comercial;15000
+7;Beatriz Rocha;29;Analista de Marketing;5200
+8;Fernando Alves;37;Administrador de Redes;7300
+9;Camila Mendes;31;Cientista de Dados;10500
+10;Bruno Ferreira;27;Suporte Técnico;3800
+11;Juliana Gomes;33;Product Owner;9800
+12;Gabriel Barbosa;39;Arquiteto de Soluções;13000
+13;Larissa Martins;26;Social Media;4100
+14;Rafael Ribeiro;35;DevOps Engineer;11500
+15;Patrícia Lima;42;Coordenadora de RH;8900
+16;Tiago Nunes;24;Desenvolvedor Frontend;5100
+17;Vanessa Cruz;32;Analista Financeiro;6400
+18;Igor Guimarães;48;Consultor SAP;14200
+19;Letícia Carvalho;23;Assistente Administrativo;2800
+20;Marcos Vinícius;36;Engenheiro Civil;8700
+21;Aline Soares;30;Psicóloga Organizacional;5600
+22;Daniel Duarte;29;DBA;8000
+23;Clara Farias;27;Redatora;4300
+24;Samuel Castro;44;Advogado;9200
+25;Renata Vieira;31;Especialista em SEO;5900
+26;Felipe Ramos;28;QA Tester;5400
+27;Priscila Borges;40;Gerente de Vendas;10200
+28;Eduardo Rocha;34;BI Analyst;7700
+29;Tatiana Luz;25;Designer Gráfico;4600
+30;Hugo Magalhães;50;Diretor de Operações;18000
+31;Simone Pires;38;Enfermeira;6100
+32;Leonardo Ramos;26;Fullstack Developer;6800
+33;Bárbara Silveira;33;Jornalista;5300
+34;Otávio Diniz;47;Economista;11800
+35;Milena Fontes;21;Aprendiz;1800
+36;Caio Teixeira;29;Analista de Segurança;8500
+37;Mônica Cavalcante;43;Contadora;7900
+38;Sérgio Marinho;35;Professor;4500
+39;Débora Peixoto;32;Nutricionista;5700
+40;Marcelo Viana;39;Piloto;12500
+41;Erika Campos;28;Arquiteta;7200
+42;Rogério Brito;46;Corretor de Imóveis;6000
+43;Sabrina Malta;30;Farmacêutica;6300
+44;Vitor Hugo;27;Fotógrafo;3900
+45;Helena Reis;36;Veterinária;7500
+46;Gustavo Paiva;31;Fisioterapeuta;5400
+47;Paola Bracho;34;Relações Públicas;6700
+48;André Cordeiro;42;Engenheiro Mecânico;9100
+49;Fabiana Monteiro;29;Engenheira Química;8300
