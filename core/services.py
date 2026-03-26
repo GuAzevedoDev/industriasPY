@@ -78,6 +78,13 @@ def registrarPeca():
             print("peca adicionada")
     sair()       
 
+""" Adicionar peca """
+
+# def adicionarPeca(nomePeca,tipo,parte,veiculos,fabricante,data_fabricacao,quantidade):
+#     pecas = lerBanco()['pecas']
+
+
+
 
 
 """ Retirar Peca """
