@@ -72,18 +72,26 @@ def registrarPeca():
     if peca in pecas:
         quantidade = int(input("Digite a quantidade: "))
         peca["quantidade"] += quantidade
-    else:
-        opcao = input("Deseja adicionar? (s/n) ")
-        if opcao.lower() == "s":
-            print("peca adicionada")
+        print(f"{quantidade} {peca['peca']} adicionadas no estoque")
+    # else:
+    #     opcao = input("Deseja registrar? (s/n) ")
+    #     if opcao.lower() == "s":
+    #         adicionarPeca()
+    #         print("peca adicionada")
     sair()       
 
 """ Adicionar peca """
 
 # def adicionarPeca(nomePeca,tipo,parte,veiculos,fabricante,data_fabricacao,quantidade):
 #     pecas = lerBanco()['pecas']
+#     maiorId = len(pecas)
+#     atualId = maiorId+1 
+#     novaPeca = {"id": atualId, "peca" : nomePeca, "tipo" : tipo, "parte" : parte, "veiculos" : [veiculos],}
 
 
+
+# novo_item = {"id": 1, "nome": "Indústria Alpha", "setor": "Mecânica"}
+# adicionarAoBanco(novo_item)
 
 
 
