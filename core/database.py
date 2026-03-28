@@ -10,9 +10,9 @@ def lerBanco():
     return dados
  
  
-def salvarBanco(dados):
+def salvarBanco(banco):
     pasta_raiz = Path(__file__).parent.parent
     caminho = pasta_raiz / "data" / "banco.json"
     with open(caminho, "w", encoding="utf-8") as arquivo:
-        json.dump(dados, arquivo, indent=4, ensure_ascii=False)
+        json.dump(banco, arquivo, indent=4, ensure_ascii=False)
  
