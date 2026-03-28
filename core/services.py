@@ -127,19 +127,28 @@ def retirarPeca(funcionarioAtual):
 
 def adicionarPeca(funcionarioAtual):
     funcionario = verificarCargo(funcionarioAtual)
-    if funcionario['cargo'] in ["gerente","vendedor","estoquista"] :
+    if funcionario['cargo'] in ["gerente","vendedor","estoquista"]:
         banco = lerBanco()
         pecas = banco["pecas"]
         
-        atualId = max(peca['id']for peca in pecas) + 1
+        atualId = max(peca['id'] for peca in pecas) + 1
 
         nomePeca = input("Digite o nome da peca: ")
-        tipo = input("Digite o tipo da peca: ")
+        tipo = input("Digite o tipo da peca (interior/eletronica/externo/mecanica/iluminacao): ")
         parte = input("Digite a parte onde fica a peca: ")
         veiculos = input("Digite os veiculos compativeis: ")
         fabricante = input("Digite o nome do fabricante: ")
         data_fabricacao = input("Digite a data de fabricacao: ")
         quantidade = int(input("Digite a quantidade: "))
+
+        tamanhoClass = {
+            "interior": "medio",
+            "eletronica": "pequeno",
+            "externo": "grande",
+            "mecanica": "grande",
+            "iluminacao": "medio"
+        }
+        tamanho = tamanhoClass.get(tipo.lower(), "medio")
 
         novaPeca = {
             "id": atualId,
@@ -149,12 +158,13 @@ def adicionarPeca(funcionarioAtual):
             "veiculos": veiculos,
             "fabricante": fabricante,
             "data_fabricacao": data_fabricacao,
-            "quantidade": quantidade
+            "quantidade": quantidade,
+            "tamanho": tamanho
         }
 
         pecas.append(novaPeca)
         salvarBanco(banco)
-        print("Peca adicionada com sucesso!")
+        print(f"Peca adicionada com sucesso! Classificada como: {tamanho}")
     else:
         print("Voce nao tem permissao para fazer isso")
     sair()
