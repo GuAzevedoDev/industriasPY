@@ -2,7 +2,8 @@ from core.database import lerBanco,salvarBanco
 from datetime import datetime
 import os
 import pandas as pd
-
+from pandas import json_normalize
+from tabulate import tabulate
 
 """ Sair """
 
@@ -58,20 +59,21 @@ def buscar_peca(pecaBuscada,pecas):
 """ Mostrar Banco """
 
 def mostrar_banco(funcionarioAtual):
-    funcionario = verificarCargo(funcionarioAtual)
-    if funcionario['cargo'] in ["gerente","vendedor","estoquista"] :
-        pecas = lerBanco()["pecas"]
+    if funcionarioAtual['cargo'] in ["gerente","vendedor","estoquista"] :
+        banco = lerBanco()
+        pecas = banco["pecas"]
+        df = json_normalize(pecas)
+        pd.set_option('display.max_rows', None)
         print("*******Estoque atual:********")
-        for peca in pecas:
-            print(f"ID: {peca['id']} // Nome: {peca['peca']}")
+        print(tabulate(df.values, headers=list(df.columns), tablefmt='fancy_grid'))
+    sair()
 
 
 
 """ Registrar Peca """
 
 def registrarPeca(funcionarioAtual):
-    funcionario = verificarCargo(funcionarioAtual)
-    if funcionario['cargo'] in ["gerente","vendedor","estoquista"] :
+    if funcionarioAtual['cargo'] in ["gerente","vendedor","estoquista"] :
         banco = lerBanco()
         pecas = banco['pecas']
         pecaBuscada = input("Digite a peca que deseja registrar: \n")
@@ -81,7 +83,7 @@ def registrarPeca(funcionarioAtual):
             peca["quantidade"] += quantidade
             salvarBanco(banco)   
             print(quantidade, peca['peca'], "adicionadas com sucesso")
-            salvarMovimentacoes("Registro de peca",peca['id'],peca['peca'],quantidade,funcionario['id'])
+            salvarMovimentacoes("Registro de peca",peca['id'],peca['peca'],quantidade,funcionarioAtual['id'])
         else:
             opcao = input("Deseja registrar? (s/n) ")
             if opcao.lower() == "s":
@@ -95,8 +97,7 @@ def registrarPeca(funcionarioAtual):
 """ Retirar Peca """
 
 def retirarPeca(funcionarioAtual):
-    funcionario = verificarCargo(funcionarioAtual)
-    if funcionario['cargo'] in ["gerente","vendedor"] :
+    if funcionarioAtual['cargo'] in ["gerente","vendedor"] :
         banco = lerBanco()
         pecas = banco['pecas']
         pecaBuscada = input("Digite a peca que deseja retirar: \n")
@@ -104,11 +105,10 @@ def retirarPeca(funcionarioAtual):
         if peca:
             quantidade = int(input("Digite a quantidade: "))
             if peca['quantidade'] >= quantidade:
-                print(peca['quantidade'])
                 peca["quantidade"] -= quantidade
                 salvarBanco(banco)   
                 print(quantidade, peca['peca'], "retirado do estoque.")
-                salvarMovimentacoes("Retirada de peca",peca['id'],peca['peca'],quantidade,funcionario['id'])
+                salvarMovimentacoes("Retirada de peca",peca['id'],peca['peca'],quantidade,funcionarioAtual['id'])
             else:
                 print("Estoque insuficiente")
         else:
@@ -126,8 +126,7 @@ def retirarPeca(funcionarioAtual):
 """ Adicionar peca """
 
 def adicionarPeca(funcionarioAtual):
-    funcionario = verificarCargo(funcionarioAtual)
-    if funcionario['cargo'] in ["gerente","vendedor","estoquista"]:
+    if funcionarioAtual['cargo'] in ["gerente","vendedor","estoquista"]:
         banco = lerBanco()
         pecas = banco["pecas"]
         
@@ -206,12 +205,6 @@ def entradaFuncionario():
                         
 
 
-""" Verificar cargo """
-
-def verificarCargo(funcionarioAtual):
-    return funcionarioAtual
-
-
 """ Salvar movimentacao """
 
 def salvarMovimentacoes(nomeFunc, idMovimentada, nomePeca, quantidade, idFuncionario):
@@ -230,8 +223,31 @@ def salvarMovimentacoes(nomeFunc, idMovimentada, nomePeca, quantidade, idFuncion
     movimentacoes.append(novaMov)
     salvarBanco(banco)
 
+
+
+""" Mostrar movimentacoes """
+
 def mostrarMovimentacoes(funcionarioAtual):
+    if funcionarioAtual['cargo'] in ["gerente"]:
+        banco = lerBanco()
+        movimentacoes = banco['movimentacoes']
+        df = json_normalize(movimentacoes)
+        pd.set_option('display.max_rows', None)
+        print(tabulate(df.values, headers=list(df.columns), tablefmt='fancy_grid'))
+        sair()
+    else:
+        print("Voce nao tem permissao para fazer isso")
+
+
+
+""" Estoque abaixo """
+
+def estoqueAbaixo(funcionarioAtual):
+    limite = int(input("Exibir peças com estoque abaixo de: "))
     banco = lerBanco()
-    movimentacoes = banco['movimentacoes']
-    for mov in movimentacoes:
-        print(f"ID: {mov['id']} | Tipo: {mov['tipo']} | Peca: {mov['nome_peca']} | Quantidade: {mov['quantidade']} | Funcionario: {mov['id_funcionario']} | Data: {mov['data_hora']}")
+    pecas = banco["pecas"]
+    df = json_normalize(pecas)
+    pd.set_option('display.max_rows', None)
+    resultado = df[df['quantidade'] < limite]
+    print(tabulate(resultado.values, headers=list(resultado.columns), tablefmt='fancy_grid'))
+    sair()
