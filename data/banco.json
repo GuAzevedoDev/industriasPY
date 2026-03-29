@@ -55,7 +55,7 @@
             ],
             "fabricante": "NovaMotion Parts",
             "data_fabricacao": "2026-01-16",
-            "quantidade": 19,
+            "quantidade": 14,
             "tamanho": "pequeno"
         },
         {
@@ -843,7 +843,7 @@
             ],
             "fabricante": "AutoLux Components",
             "data_fabricacao": "2026-03-16",
-            "quantidade": 17,
+            "quantidade": 7,
             "tamanho": "medio"
         },
         {
@@ -1375,6 +1375,24 @@
             "quantidade": 2,
             "id_funcionario": 1,
             "data_hora": "27/03/2026 23:14:07"
+        },
+        {
+            "id": 2,
+            "tipo": "Retirada de peca",
+            "id_peca": 62,
+            "nome_peca": "Banco racing carbono",
+            "quantidade": 10,
+            "id_funcionario": 1,
+            "data_hora": "28/03/2026 12:40:34"
+        },
+        {
+            "id": 3,
+            "tipo": "Retirada de peca",
+            "id_peca": 4,
+            "nome_peca": "Painel digital esportivo",
+            "quantidade": 5,
+            "id_funcionario": 1,
+            "data_hora": "28/03/2026 13:03:49"
         }
     ]
 }
