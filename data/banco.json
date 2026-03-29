@@ -1264,7 +1264,7 @@
             ],
             "fabricante": "NovaMotion Parts",
             "data_fabricacao": "2026-04-17",
-            "quantidade": 92,
+            "quantidade": 94,
             "tamanho": "pequeno"
         },
         {
@@ -1393,6 +1393,15 @@
             "quantidade": 5,
             "id_funcionario": 1,
             "data_hora": "28/03/2026 13:03:49"
+        },
+        {
+            "id": 4,
+            "tipo": "Registro de peca",
+            "id_peca": 94,
+            "nome_peca": "Painel digital racing",
+            "quantidade": 2,
+            "id_funcionario": 3,
+            "data_hora": "29/03/2026 19:18:35"
         }
     ]
 }

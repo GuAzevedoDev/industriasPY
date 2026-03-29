@@ -22,18 +22,18 @@ def menu():
             "estoquista": {
                 "1": ("Mostrar estoque completo", mostrar_banco),
                 "2": ("Registrar peca no estoque", registrarPeca),
-                "3": ("Adcionar nova peca", adicionarPeca),
+                "3": ("Adicionar nova peca", adicionarPeca),
             }
         }
         while True: 
             os.system('cls')
             print(f"{'='*10}Industria PY{'='*10}\n")
-            print(f"{atualFuncionario['nome']} // {atualFuncionario['cargo']}\n\n")
+            print(f"{atualFuncionario['nome']} // {atualFuncionario['cargo'].capitalize()}\n\n")
             
             menuCerto = menu[atualFuncionario['cargo']]
 
             for key, (nome,_) in menuCerto.items():
-                print(f"{key}: {nome}")
+                print(f"{key}: {nome}")   
             print("0: Sair")
             opcao = input("\nDigite o numero da funcao: ")
             _,funcao = menuCerto.get(opcao,(None,None))
