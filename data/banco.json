@@ -390,7 +390,7 @@
             ],
             "fabricante": "TitanDrive Industries",
             "data_fabricacao": "2026-02-10",
-            "quantidade": 38,
+            "quantidade": 40,
             "tamanho": "grande"
         },
         {
@@ -1402,6 +1402,15 @@
             "quantidade": 2,
             "id_funcionario": 3,
             "data_hora": "29/03/2026 19:18:35"
+        },
+        {
+            "id": 5,
+            "tipo": "Registro de peca",
+            "id_peca": 28,
+            "nome_peca": "Rodas classicas aro15",
+            "quantidade": 2,
+            "id_funcionario": 1,
+            "data_hora": "25/06/2026 23:36:19"
         }
     ]
 }
